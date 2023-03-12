@@ -1,0 +1,97 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Poppins", sans-serif;
+    font-size: 1.6rem;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+/* ======= Common ======== */
+
+.content {
+    width: 1170px;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: calc(100% - 48px);
+}
+
+a {
+    text-decoration: none;
+}
+
+.btn {
+    display: block;
+    padding: 0 16px;
+    line-height: 50px;
+    font-weight: 600;
+    font-size: 16px;
+    text-align: center;
+    min-width: 118px;
+    color: #ffffff;
+    background: #171100;
+    border-radius: 24.5px;
+}
+/* ======= Header ======== */
+
+.header {
+    background: #fffcf4;
+    padding: 36px 0 8px;
+}
+
+.header.fixed {
+    position: sticky;
+    top: -28px;
+}
+
+.header .body {
+    display: flex;
+}
+
+.header .nav {
+    display: flex;
+    align-items: center;
+}
+
+.nav {
+    margin-left: auto;
+}
+
+.nav ul {
+    display: flex;
+}
+
+.nav ul a {
+    position: relative;
+    padding: 8px 21px;
+    font-weight: 400;
+    font-size: 1.6rem;
+    color: #5f5b53;
+}
+
+.nav a:hover,
+.nav .active a {
+    text-shadow: 1px 0 0 currentColor;
+    color: #171100;
+}
+
+.nav .active a::after {
+    position: absolute;
+    display: block;
+    content: "";
+    width: 12px;
+    height: 2px;
+    left: 21px;
+    bottom: 6px;
+    background: #171100;
+    border-radius: 1px;
+}
+
+.header .action {
+    margin-left: 49px;
+    min-width: 144px;
+}
